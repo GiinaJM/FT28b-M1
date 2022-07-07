@@ -3,12 +3,11 @@
 function BinarioADecimal(num) {
   // tu codigo aca
 
-  var dec=num.split("");
-  dec=dec.reverse();
+ return num.split("").reverse().reduce((acc,cur, idx)=>{
+  return(cur==='1')?acc+Math.pow(2, idx):acc;
+ },0)
+ }
 
-
-
-}
 
 function DecimalABinario(num) {
   // tu codigo aca
